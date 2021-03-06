@@ -6,13 +6,14 @@ function preload() {
 
 function classifyImg() {
     var imageoutput = document.getElementById('output');
-	x=imageoutput.src;
+		x=imageoutput.src;
     alert(x);
     classifier.classify(x, gotResults);
 }
 
 function gotResults(e, i) {
-    alert(i[0]);
+  alert(e);  
+	alert(i[0]);
 }
 
 var loadFile = function(event) {
