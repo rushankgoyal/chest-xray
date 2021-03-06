@@ -5,7 +5,8 @@ function preload() {
 }
 
 function classifyImg() {
-    var x = document.forms["myForm"]["image"].value;
+    var imageoutput = document.getElementById('output');
+	x=imageoutput.src;
     alert(x);
     classifier.classify(x, gotResults);
 }
@@ -17,4 +18,5 @@ function gotResults(e, i) {
 var loadFile = function(event) {
 	var image = document.getElementById('output');
 	image.src = URL.createObjectURL(event.target.files[0]);
+	classifyImg();
 };
