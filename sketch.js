@@ -13,3 +13,8 @@ function classifyImg() {
 function gotResults(e, i) {
     alert(i[0]);
 }
+
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
