@@ -6,7 +6,7 @@ function preload() {
 
 function classifyImg() {
     var x = document.forms["myForm"]["image"].value;
-    alert(x)
+    alert(x);
     classifier.classify(x, gotResults);
 }
 
