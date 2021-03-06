@@ -6,9 +6,11 @@
       <meta charset="utf-8">
    </head>
    <body>
-      <input type='file' />
-      <img id="myImg" src="#" alt="your image" />
-
-      <script src="sketch.js"></script><button class="myButton" onclick="classifyVideo()">Click to Classify</button>
+      <form id="myForm" onsubmit="classifyImg()">
+         Upload X-Ray as an image:
+         <input type="file" name="image"/>
+         <input type="submit"/>
+      </form>
+      <script src="sketch.js"></script>
    </body>
 </html>
