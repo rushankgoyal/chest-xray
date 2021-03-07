@@ -8,6 +8,7 @@ function preload() {
 function classifyImg() {
     var imageoutput = document.getElementById('output');
 		x=imageoutput.src;
+	alert(imageoutput);
     alert(x);
     classifier.classify(imageoutput, gotResults);
 }
