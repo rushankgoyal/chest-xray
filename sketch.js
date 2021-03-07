@@ -9,7 +9,7 @@ function classifyImg() {
     var imageoutput = document.getElementById('output');
 		x=imageoutput.src;
     alert(x);
-    classifier.classify(x, gotResults);
+    classifier.classify(imageoutput, gotResults);
 }
 
 function gotResults(e, i) {
