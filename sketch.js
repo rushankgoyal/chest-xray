@@ -2,6 +2,7 @@ let classifier;
 
 function preload() {
     classifier = ml5.imageClassifier("https://storage.googleapis.com/tm-model/W4qRx-0aF/model.json");
+	alert('Classifier loaded');
 }
 
 function classifyImg() {
@@ -12,6 +13,7 @@ function classifyImg() {
 }
 
 function gotResults(e, i) {
+	alert('Got results');
   alert(e);  
 	alert(i[0]);
 }
